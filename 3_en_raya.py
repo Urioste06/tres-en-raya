@@ -44,6 +44,10 @@ def ganador():
     if (t[0]==elecJugador2 and t[3]==elecJugador2 and t[6]==elecJugador2)or(t[1]==elecJugador2 and t[4]==elecJugador2 and t[7]==elecJugador2)or(t[2]==elecJugador2 and t[5]==elecJugador2 and t[8]==elecJugador2):
         bloquear()
         messagebox.showinfo("GANADOR",SnombreJugador2+" Gano el juego")
+    if "N" not in t:
+        bloquear()
+        messagebox.showinfo("EMPATE","No hay ganadores. El juego ha terminado en empate.")
+
 
 def iniciarJ():
     for i in range(0,9):
